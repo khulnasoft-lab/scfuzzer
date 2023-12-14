@@ -73,7 +73,7 @@ jobs:
           tar -czf "scfuzzer-${{ steps.version.outputs.version }}-${{ matrix.tuple }}.tar.gz" -C ./redistributable/bin/ scfuzzer
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: scfuzzer-redistributable
           path: scfuzzer-${{ steps.version.outputs.version }}-${{ matrix.tuple }}.tar.gz
