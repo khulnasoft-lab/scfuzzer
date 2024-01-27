@@ -1,4 +1,4 @@
-FROM alpine:3.18.4
+FROM alpine:3.19.1
 # Based on https://github.com/fpco/alpine-haskell-stack/blob/9.2.8v2/ghc-Dockerfile
 
 RUN apk upgrade --no-cache &&\
